@@ -9,7 +9,7 @@ function App() {
         <p>
           The Future Home of a Purring Wolverine <code>src/App.js</code>
         </p>
-        <p>See you soon</p>
+        <p>See you soon, I can't wait to help you relax</p>
 
         <a
           className="App-link"
