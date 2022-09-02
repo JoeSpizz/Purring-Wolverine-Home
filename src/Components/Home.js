@@ -14,6 +14,7 @@ function Home (){
   <use href="#d-text" class="text-copy1"></use>
 </g>
 </svg>
+
 </div>
 }
 
