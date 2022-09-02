@@ -7,6 +7,7 @@ import Roleplays from "./Components/Roleplays";
 import Rambles from "./Components/Rambles";
 import '../src/index.css';
 import Requests from "./Components/Requests";
+import SelfCare from "./Components/SelfCare";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route> 
         <Route exact path="/requests">
           <Requests/>
+        </Route>
+        <Route exact path="/selfcare">
+          <SelfCare/>
         </Route>
         </Switch>
         

@@ -23,6 +23,7 @@ function MeditationList(){
     
     //https://www.youtube.com/embed/tZMdcmr0_sE
     return <div>
+        {/* The keyframed animation for the title of this page */}
         <svg viewBox="0 0 2200 200">
   <symbol id="t-text">
       <text text-anchor="middle" x="50%" y="80%">Meditation</text>
@@ -37,6 +38,7 @@ function MeditationList(){
       <use href="#t-text" class="text-copy1"></use>
   </g>
 </svg>
+{/* The video content of the page */}
         <div className="twoThings">
         <iframe width="560" height="315" src={musicForOne} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fpvB-YRA0aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
