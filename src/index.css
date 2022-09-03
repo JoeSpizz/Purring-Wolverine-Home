@@ -150,3 +150,13 @@ animation-delay: -5s;
 .ytwindow{
   border-radius: 25px;
 }
+
+.container{
+  justify-content: center;
+  text-align: center;
+}
+#ideaBox{
+  width: 300px;
+  height: 100px;
+  word-wrap: normal;
+}
