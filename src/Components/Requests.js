@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import RequestForm from "./RequestForm";
 
 function Requests (){
-    
+    const [form, setForm]=useState(false)
+
+    function handleClick(){
+        setForm(!form)
+    }
+
    return <div>
    <svg viewBox="0 0 2200 200">
 <symbol id="c-text">
@@ -19,7 +24,10 @@ function Requests (){
 </g>
 </svg>
 {/* start of actual component */}
-<RequestForm/>
+<div id="requestFormShow">
+<button value="Request Form" onClick={handleClick}>Request Form</button>
+</div>
+{form ? <RequestForm/> : null}
 </div>
 }
 
