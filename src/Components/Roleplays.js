@@ -17,8 +17,14 @@ function Roleplays(){
 </svg>
 {/* Code for the videos themselves */}
 <div className="twoThings">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FDZzvmUBq1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BJ6-eOOvqTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/FDZzvmUBq1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/BJ6-eOOvqTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div className="twoThings">
+    <p className="videoDescription">An idea from a reddit post, here is a topic that might otherwise be stressful, a test! However when the questions are read like this you might fall asleep rather than stress about the answers!
+ASMR Soft Spoken and whispering. Some light triggers with pencil on paper.</p>
+    <p className="videoDescription">Wherein you desperately need someone to help with your makeup before you go out and all you have is me. I've never done this before, but I'm sure I'll make you look great. As long as you don't look too hard.</p>
+
 </div>
     </div>
 }

@@ -15,7 +15,7 @@ code {
 
 /* This styling came largely from CodePen vault https://codepen.io/umarcbs/pen/oNYePEj */
 /* and was then edited by me to fit the site */
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 html, body{
   height: 100%;
@@ -29,7 +29,7 @@ body{
 
 svg {
     display: block;
-    font: 10.5em 'Helvetica';
+    font: 10.5em 'Playfair+Display';
     width: 960px;
     height: 100px;
     margin: 0 auto;
@@ -141,4 +141,12 @@ animation-delay: -5s;
 .videoDescription{
   width: 560px;
   text-align: center;
+}
+.welcome{
+  text-align: center;
+  color: rgb(178, 34, 214);
+  font-family: Helvetica, sans-serif;
+}
+.ytwindow{
+  border-radius: 25px;
 }

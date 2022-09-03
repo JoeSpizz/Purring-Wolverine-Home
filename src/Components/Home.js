@@ -14,7 +14,9 @@ function Home (){
   <use href="#d-text" class="text-copy1"></use>
 </g>
 </svg>
-
+<div className="welcome">
+<h2>What is ASMR?</h2>
+</div>
 </div>
 }
 

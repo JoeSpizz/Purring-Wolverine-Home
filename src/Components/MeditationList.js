@@ -40,8 +40,8 @@ function MeditationList(){
 </svg>
 {/* The video content of the page */}
         <div className="twoThings">
-        <iframe width="560" height="315" src={musicForOne} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fpvB-YRA0aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" className="ytwindow" src={musicForOne} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/fpvB-YRA0aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
        <div className="twoThings">
        <p className="videoDescription">Wherein we fall asleep in just under 20 minutes by doing some simple meditations together. The video will get darker and darker through the back half to ease you into a restful sleep.    
@@ -51,7 +51,7 @@ function MeditationList(){
         <p className="videoDescription">Wherein we remove the things that might be preventing you from getting a peaceful night's rest. And remind you that you are ARE worthy of good things and success.</p>
         </div>
         <div className="twoThings">
-        <iframe width="560" height="315" src={musicForTwo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" className="ytwindow" src={musicForTwo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div className="twoThings">
        <p className="videoDescription">Wherein we meditate in an effort to bring a sense of peace into ourselves.
