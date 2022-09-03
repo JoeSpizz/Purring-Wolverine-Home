@@ -124,17 +124,17 @@ animation-delay: -2s;
 
 .text-copy1:nth-child(3){
 stroke: #3dcce5;
-animation-delay: -3s;
+animation-delay: -5s;
 }
 
 .text-copy1:nth-child(4){
 stroke: rgb(178, 34, 214);
-animation-delay: -4s;
+animation-delay: -6s;
 }
 
 .text-copy1:nth-child(5){
 stroke: #3dcce5;
-animation-delay: -5s;
+animation-delay: -8s;
 }
 
 /* more generic styling */
@@ -154,6 +154,9 @@ animation-delay: -5s;
 .container{
   justify-content: center;
   text-align: center;
+  font-family: fantasy;
+  color: #ce39e9;
+  
 }
 #ideaBox{
   width: 300px;
