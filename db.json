@@ -2,24 +2,24 @@
   "requests": [
     {
       "id": 1,
-      "name": "json-server",
-      "idea": "typicode",
+      "name": "Frank",
+      "idea": "It would be neat if you made a Ramble about your tatoos",
       "genre": "Ramble",
-      "Likes": 3
+      "likes": 3
     },
     {
       "id": 2,
-      "name": "json-server",
-      "idea": "typicode",
-      "genre": "Ramble",
-      "Likes": 3
+      "name": "Sleepy wolverine cub",
+      "idea": "I would like another sleep meditation please! Maybe one with lots of non-verbal triggers.",
+      "genre": "meditation",
+      "likes": 3
     },
     {
       "id":3,
-      "name": "json-server",
-      "idea": "typicode",
-      "genre": "Ramble",
-      "Likes": 3
+      "name": "Some Famous ASMRtist",
+      "idea": "I've just had a really bad week. Could you do a self-care video about how to stay positive when everything around you is just the worst?",
+      "genre": "selfcare",
+      "likes": 3
     }
   ]
 }

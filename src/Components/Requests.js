@@ -1,17 +1,22 @@
 import React, {useState, useEffect} from "react";
 import RequestForm from "./RequestForm";
+import RequestCard from "./RequestCard"
 
 function Requests (){
     const [form, setForm]=useState(false)
+    const [requestArray, setRequestArray] = useState([])
 
     useEffect(()=>{
         fetch("http://localhost:3000/requests")
         .then(r=>r.json())
-        .then(data=>console.log(data))
-    })
-
+        .then(data=>setRequestArray(data))
+    }, [])
     function handleClick(){
         setForm(!form)
+    }
+
+    function handleRequest(request){
+        
     }
 
    return <div>
@@ -30,10 +35,13 @@ function Requests (){
 </g>
 </svg>
 {/* start of actual component */}
+<div>
 <div id="requestFormShow">
 <button value="Request Form" onClick={handleClick}>Request Form</button>
 </div>
-{form ? <RequestForm/> : null}
+{form ? <RequestForm newRequest={handleRequest}/>: null}
+</div>
+{requestArray.map(request=> <RequestCard request={request}/>)}
 </div>
 }
 

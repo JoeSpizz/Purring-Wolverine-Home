@@ -1,9 +1,9 @@
 import {useState} from 'react'
 
-function RequestForm(){
+function RequestForm({newRequest}){
     const [formData, setFormData] = useState({
         name: "Sleepy wolverine cub",
-        vidIdea: "",
+        idea: "",
         genre: "Any"
       });
     
@@ -16,18 +16,7 @@ function RequestForm(){
     
       function handleSubmit(event) {
         event.preventDefault();
-    
-       console.log("form submitted "+ formData.genre)
-    
-        // fetch("http://localhost:3001/toys", {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify(newToy),
-        // })
-        //   .then((r) => r.json())
-        //   .then(onAddToy);
+        newRequest(formData)
       }
     return(
         <div className="container">
@@ -45,9 +34,9 @@ function RequestForm(){
           <br></br>
           <textarea
             type="text"
-            name="vidIdea"
+            name="idea"
             onChange={handleChange}
-            value={formData.vidIdea}
+            value={formData.idea}
             placeholder="Enter Your Idea..."
             id="ideaBox"
           />
