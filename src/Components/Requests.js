@@ -1,8 +1,14 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import RequestForm from "./RequestForm";
 
 function Requests (){
     const [form, setForm]=useState(false)
+
+    useEffect(()=>{
+        fetch("http://localhost:3000/requests")
+        .then(r=>r.json())
+        .then(data=>console.log(data))
+    })
 
     function handleClick(){
         setForm(!form)

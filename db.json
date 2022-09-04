@@ -1,0 +1,25 @@
+{
+  "requests": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "idea": "typicode",
+      "genre": "Ramble",
+      "Likes": 3
+    },
+    {
+      "id": 2,
+      "name": "json-server",
+      "idea": "typicode",
+      "genre": "Ramble",
+      "Likes": 3
+    },
+    {
+      "id":3,
+      "name": "json-server",
+      "idea": "typicode",
+      "genre": "Ramble",
+      "Likes": 3
+    }
+  ]
+}
