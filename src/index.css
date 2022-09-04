@@ -202,10 +202,10 @@ text-align: center;
   color: #fff;
   transform: rotateY(30deg) rotateX(15deg);
   transform-style: preserve-3d;
-  transition: transform 1s;
+  transition: transform 1.5s;
 }
   .card:hover {
-    transform: rotateY(-30deg) rotateX(-15deg);
+    transform: rotateY(-17.5deg) rotateX(-10deg);
   }
 
 
@@ -235,3 +235,12 @@ text-align: center;
   .layer:last-child {
     box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
   }
+#reqButton{
+  border-radius: 25px;
+  width: 85px;
+  height: 25px;
+  background: linear-gradient(.25turn, #3dcce5,#ce39e9);
+}
+#reqButton:hover{
+  transform: scale(1.3);
+}

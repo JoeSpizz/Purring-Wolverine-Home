@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-function RequestForm({newRequest}){
+function RequestForm({newRequest, form, setForm}){
     const [formData, setFormData] = useState({
         name: "Sleepy wolverine cub",
         idea: "",
@@ -17,7 +17,16 @@ function RequestForm({newRequest}){
     
       function handleSubmit(event) {
         event.preventDefault();
-        newRequest(formData)
+         fetch("http://localhost:3000/requests", {
+            method: "POST",
+            headers: {
+                "Content-type":"Application/JSON"
+            },
+            body: JSON.stringify(formData)
+        })
+        .then (r=>r.json())
+        .then(newRequest)
+        setForm(!form)
       }
     return(
         <div className="container">

@@ -11,8 +11,9 @@ return(
 <div class="card-container">
   <div class="card">
     <h3>{request.name} requested a {request.genre} video</h3><br></br>
-    <p>Idea: {request.idea}</p>
-    <button type="submit" onClick={handleSubmit}>Likes: {likes}</button>
+    <p>{request.idea}</p>
+    <br></br>
+    <button type="submit" onClick={handleSubmit} id="reqButton">Likes: {likes}</button>
     <div class="layers">
       <div class="layer"></div>
       <div class="layer"></div>
