@@ -1,11 +1,33 @@
+import React, {useState} from 'react'
 function RequestCard ({request}){
+const [likes, setLikes] = useState(request.likes)
+function handleSubmit(){
+    setLikes(likes+1)
+console.log(likes)
+}
+
 return(
-    <div>
-        <h3>Name: {request.name}</h3>
-        <p>Idea:{request.idea}</p>
-        <p>Genre:{request.genre}</p>
-        <p>Likes: {request.likes}</p>
+    <div className="reqBody">
+<div class="card-container">
+  <div class="card">
+    <h3>{request.name} requested a {request.genre} video</h3><br></br>
+    <p>Idea: {request.idea}</p>
+    <button type="submit" onClick={handleSubmit}>Likes: {likes}</button>
+    <div class="layers">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>   
     </div>
+  </div> 
+</div>
+</div>
 )
 }
 export default RequestCard

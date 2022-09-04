@@ -166,3 +166,72 @@ animation-delay: -8s;
 #requestFormShow{
 text-align: center;
 }
+
+
+/* styling for request cards imported from project '3D CSS Card' by Amit Sheen, https://codepen.io/amit_sheen/pen/ZEJdamr?editors=1111 */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+.float-container{
+  padding: 20px;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.reqBody {
+  font-family: Raleway, sans-serif;  
+  padding: 1.5em;
+  width: 400px;
+  float: left;
+ 
+}
+
+.card-container {
+  perspective: 50em;
+}
+.card-container:nth-child(1) { --bi: linear-gradient(#555 5em, #0000 3em), linear-gradient(60deg, #ce39e9, #3dcce5); }
+
+
+.card {
+  position: relative;
+  width: 320px;
+  padding: 1.5em;
+  color: #fff;
+  transform: rotateY(30deg) rotateX(15deg);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+  .card:hover {
+    transform: rotateY(-30deg) rotateX(-15deg);
+  }
+
+
+.layers {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.layer {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  border-radius: 1em;
+  background-image: var(--bi);
+  transform: translateZ(var(--tz));
+  box-shadow: 0 0 0.5em #000d inset;
+  
+  @for $i from 0 to 10 {
+    &:nth-child(#{$i + 1}) {
+      --tz: #{$i * -4}px;
+    }
+  }
+}
+  .layer:last-child {
+    box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
+  }

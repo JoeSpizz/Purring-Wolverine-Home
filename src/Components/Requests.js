@@ -10,14 +10,26 @@ function Requests (){
         fetch("http://localhost:3000/requests")
         .then(r=>r.json())
         .then(data=>setRequestArray(data))
-    }, [])
+    }, [requestArray])
     function handleClick(){
         setForm(!form)
     }
 
     function handleRequest(request){
-        
+        const displayedRequests = [...requestArray]
+        // setRequestArray(displayedRequests)
+        fetch("http://localhost:3000/requests", {
+            method: "POST",
+            headers: {
+                "Content-type":"Application/JSON"
+            },
+            body: JSON.stringify(request)
+        })
+        .then (r=>r.json())
+        .then(data=>displayedRequests.push(data))
+        setRequestArray(displayedRequests)
     }
+
 
    return <div>
    <svg viewBox="0 0 2200 200">
@@ -39,9 +51,13 @@ function Requests (){
 <div id="requestFormShow">
 <button value="Request Form" onClick={handleClick}>Request Form</button>
 </div>
+<div>
 {form ? <RequestForm newRequest={handleRequest}/>: null}
 </div>
-{requestArray.map(request=> <RequestCard request={request}/>)}
+<div className="float-container">
+{requestArray.map(request=> <RequestCard request={request} key={request.id}/>)}
+</div>
+</div>
 </div>
 }
 

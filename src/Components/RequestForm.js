@@ -4,7 +4,8 @@ function RequestForm({newRequest}){
     const [formData, setFormData] = useState({
         name: "Sleepy wolverine cub",
         idea: "",
-        genre: "Any"
+        genre: "Any",
+        likes: 0
       });
     
       function handleChange(event) {
