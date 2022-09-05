@@ -4,18 +4,22 @@ const [likes, setLikes] = useState(request.likes)
 function handleSubmit(){
     let id = request.id
     fetch(`http://localhost:3000/requests/${id}`, {
-      method: "PATCH",
+      method: "PUT",
       headers: {
         'Accept': 'application/json',
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin":'http://localhost:3001',
       },
       body: JSON.stringify({
-          likes: likes + 1
+        id: request.id,
+        name: request.name,
+        idea: request.idea,
+        genre: request.genre,
+        likes: likes +1
       }),
     })
       .then((r) => r.json())
-  .then((json) => console.log(json));
+  .then((json) => console.log("hello" +json.likes));
     setLikes(likes+1)
 }
 

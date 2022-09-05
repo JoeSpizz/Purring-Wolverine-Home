@@ -3,23 +3,23 @@
     {
       "id": 1,
       "name": "Frank",
-      "idea": "It would be neat if you made a Ramble about your tatoos",
+      "idea": "It would be neat if you made a ramble about your tatoos",
       "genre": "Ramble",
-      "likes": 3
+      "likes": 5
     },
     {
       "id": 2,
       "name": "Sleepy wolverine cub",
       "idea": "I would like another sleep meditation please! I'd really like to hear some mic-scratches!",
       "genre": "meditation",
-      "likes": 3
+      "likes": 2
     },
     {
       "id": 3,
       "name": "Some Famous ASMRtist",
       "idea": "I've just had a bad week. Could you do a self-care video about staying positive when the world is just the worst?",
       "genre": "selfcare",
-      "likes": 3
+      "likes": 30
     }
   ]
 }
