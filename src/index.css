@@ -224,17 +224,11 @@ text-align: center;
   border-radius: 1em;
   background-image: var(--bi);
   transform: translateZ(var(--tz));
-  box-shadow: 0 0 0.5em #000d inset;
-  
-  @for $i from 0 to 10 {
-    &:nth-child(#{$i + 1}) {
-      --tz: #{$i * -4}px;
-    }
-  }
+  box-shadow: 0 0 0.5em #000d;
 }
-  .layer:last-child {
-    box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
-  }
+
+
+
 #reqButton{
   border-radius: 25px;
   width: 85px;
@@ -244,3 +238,121 @@ text-align: center;
 #reqButton:hover{
   transform: scale(1.3);
 }
+
+/* styling for Home page cards from Sebi on codepen. https://codepen.io/DivineBlow/pen/ZEBqNZb */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.homeCards {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Righteous", cursive;
+  min-height: 100vh;
+  background-color: #f4d898;
+}
+  .containerH {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+    .cardH {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      margin: 0 auto;
+      background: #000;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    }
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .face1 {
+          box-sizing: border-box;
+          padding: 20px;
+        }
+          h2 {
+            margin: 0;
+            padding: 0;
+          }
+
+          .java {
+            background-color: #fffc00;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .python {
+            background-color: #00fffc;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .cSharp {
+            background-color: #fc00ff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        
+
+        .face2 {
+          transition: 0.5s;
+        }
+          h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 2em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+          }
+        
+      
+    
+
+    .cardH:hover .face2 {
+      height: 60px;
+    }
+
+    .cardH:nth-child(1) .face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fffc00 0%,
+        #fc00ff 45%,
+        #00fffc 100%
+      );
+      border-radius: 15px;
+    }
+
+    .cardH:nth-child(2) .face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fc00ff 0%,
+        #00fffc 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+    }
+
+    .cardH:nth-child(3) .face2 {
+      background-image: linear-gradient(
+        40deg,
+        #00fffc 0%,
+        #fc00ff 45%,
+        #fffc00 100%
+      );
+      border-radius: 15px;
+    }
