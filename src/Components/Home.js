@@ -14,18 +14,17 @@ function Home (){
   <use href="#d-text" className="text-copy1"></use>
 </g>
 </svg>
-<div classNameName="welcome">
-<h2>Future Home of Intro Video</h2>
+<div className="welcome" >
+<iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/uQP_0fa06rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div className="homeCards">
 <div className="containerH">
-
 <div className="cardH">
   <div className="face face1">
     <div className="content">
       <span className="stars"></span>
-      <h2 className="java">About Me</h2>
-      <p className="java">I am currently located Aurora Colorado. ASMR is dope and this is filler. </p>
+      <h2 className="java">About Me</h2><br></br>
+      <p className="java">I am dude in his mid 30's, currently located in Aurora Colorado. I have been here for almost a decade with my wife. <br></br><br></br> I recently left the world of cannabis for the world of software engineering. I am learning to code at Flatiron School and have found that I really do love creating content! </p>
     </div>
   </div>
   <div className="face face2">
@@ -38,7 +37,8 @@ function Home (){
     <div className="content">
       <span className="stars"></span>
       <h2 className="python">What is ASMR?</h2>
-      <p className="python">Autonomous Sensory Meridian Response means a lot of things to different people. But for me it's about relaxation.</p>
+      <br></br>
+      <p className="python">Autonomous Sensory Meridian Response means a lot of things to different people, but ultimately comes down to relaxation and affirmation. Whether is be softly spoken or whispered works, non-verbal audio triggers, affirmation and self-worth triggers, or visual triggers, the goal of all ASMRtists is to help you relax. </p>
     </div>
   </div>
   <div className="face face2">
@@ -51,7 +51,8 @@ function Home (){
     <div className="content">
       <span className="stars"></span>
       <h2 className="cSharp">Credits</h2>
-      <p className="cSharp">This site was built with knowledge learned from Flatiron and code found on Codepen.</p>
+      <br></br>
+      <p className="cSharp">This site was built with knowledge learned from <a href="https://flatironschool.com/courses/coding-bootcamp/">Flatiron School</a> and code found on Codepen.</p>
     </div>
   </div>
   <div className="face face2">
