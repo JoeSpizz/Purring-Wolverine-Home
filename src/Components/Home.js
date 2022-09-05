@@ -52,7 +52,7 @@ function Home (){
       <span className="stars"></span>
       <h2 className="cSharp">Credits</h2>
       <br></br>
-      <p className="cSharp">This site was built with knowledge learned from <a href="https://flatironschool.com/courses/coding-bootcamp/" target="_blank" rel="noreferrer">flatiron school</a> and CSS styling code from <a href="https://codepen.io/umarcbs/pen/oNYePEj" target="_blank" rel="noreferrer">umar farooq</a>, <a href="https://codepen.io/amit_sheen/pen/ZEJdamr?editors=1111" target="_blank" rel="noreferrer">amit sheen</a>, and <a href="https://codepen.io/DivineBlow/pen/ZEBqNZb" target="_blank" rel="noreferrer">sebi</a> found on <a href="https://codepen.io/trending" target="_blank" rel="noreferrer">codepen</a>.</p>
+      <p className="cSharp">This site was built using React (and the react-router-dom) with knowledge learned from <a href="https://flatironschool.com/courses/coding-bootcamp/" target="_blank" rel="noreferrer">flatiron school</a> and CSS styling code from <a href="https://codepen.io/umarcbs/pen/oNYePEj" target="_blank" rel="noreferrer">umar farooq</a>, <a href="https://codepen.io/amit_sheen/pen/ZEJdamr?editors=1111" target="_blank" rel="noreferrer">amit sheen</a>, and <a href="https://codepen.io/DivineBlow/pen/ZEBqNZb" target="_blank" rel="noreferrer">sebi</a> found on <a href="https://codepen.io/trending" target="_blank" rel="noreferrer">codepen</a>. Additional code inspriation came from Mike Archer and emotional support from my lovely wife.</p>
     </div>
   </div>
   <div className="face face2">

@@ -240,7 +240,7 @@ text-align: center;
 }
 
 /* styling for Home page cards from Sebi on codepen. https://codepen.io/DivineBlow/pen/ZEBqNZb */
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .homeCards {
   margin: 0;
@@ -248,7 +248,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Righteous", cursive;
+  font-family: "Montserrat";
   min-height: 100vh;
   background-color: #f4d898;
 }
@@ -266,7 +266,7 @@ text-align: center;
       height: 400px;
       margin: 0 auto;
       background: #000;
-      border-radius: 15px;
+      border-radius: 25px;
       box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
     }
       .face {
@@ -289,7 +289,7 @@ text-align: center;
           }
 
           .java {
-            background-color: #fffc00;
+            background-color: #43e34b;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -301,7 +301,7 @@ text-align: center;
           }
 
           .cSharp {
-            background-color: #fc00ff;
+            background-color: #d42cd6;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -362,9 +362,11 @@ text-align: center;
       margin-bottom: -80px;
     }
     .content a{
-      font-family: helvetica;
+      font-family: fantasy;
       font-variant: small-caps;
+
     }
     .content a:hover{
-    font-size: larger;
+      font-kerning: 5px;
+      
     }
