@@ -24,7 +24,7 @@ function Home (){
     <div className="content">
       <span className="stars"></span>
       <h2 className="java">About Me</h2><br></br>
-      <p className="java">I am dude in his mid 30's, currently located in Aurora Colorado. I have been here for almost a decade with my wife. <br></br><br></br> I recently left the world of cannabis for the world of software engineering. I am learning to code at Flatiron School and have found that I really do love creating content! </p>
+      <p className="java">I am a dude in his mid 30's, currently located in Aurora Colorado. I have been here for almost a decade with my wife. <br></br><br></br> I recently left the world of cannabis for the world of software engineering. I am learning to code at Flatiron School and have found that I really do love creating content! </p>
     </div>
   </div>
   <div className="face face2">
@@ -38,7 +38,7 @@ function Home (){
       <span className="stars"></span>
       <h2 className="python">What is ASMR?</h2>
       <br></br>
-      <p className="python">Autonomous Sensory Meridian Response means a lot of things to different people, but ultimately comes down to relaxation and affirmation. Whether is be softly spoken or whispered works, non-verbal audio triggers, affirmation and self-worth triggers, or visual triggers, the goal of all ASMRtists is to help you relax. </p>
+      <p className="python">Autonomous Sensory Meridian Response means a lot of things to different people, but ultimately comes down to relaxation and affirmation. Whether it be softly spoken or whispered words, non-verbal audio triggers, affirmations and self-worth triggers, or visual triggers, the goal of all ASMRtists is to help you relax. </p>
     </div>
   </div>
   <div className="face face2">
