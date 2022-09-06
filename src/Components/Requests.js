@@ -54,7 +54,7 @@ function Requests (){
 {/* start of actual component */}
 <div>
 <div id="requestFormShow">
-<button value="Request Form" onClick={handleClick}>Request Form</button>
+<button value="Request Form" onClick={handleClick} className="reqButton">Request Form</button>
 </div>
 <div>
 {form ? <RequestForm supabase={supabase} newRequest={handleRequest} form={form} setForm={setForm}/>: null}

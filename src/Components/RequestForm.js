@@ -19,13 +19,12 @@ function RequestForm({newRequest, form, setForm, supabase}){
       function handleSubmit(event) {
         event.preventDefault();
 
-        var myHeaders = {
+        let myHeaders = {
         "apikey" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53Z25rdmFla2l0bnhyYmpiY2NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjIzODY2MDMsImV4cCI6MTk3Nzk2MjYwM30.f5fnLu4pfrXFcsP4VGAdDgwGmsXM0QwKiFTKSLanst0",
         "Content-Type": "application/json"}
         
-        var raw = JSON.stringify([formData]);
-        
-        var requestOptions = {
+        let raw = JSON.stringify([formData]);
+        let requestOptions = {
           method: 'POST',
           headers: myHeaders,
           body: raw,
@@ -37,9 +36,10 @@ function RequestForm({newRequest, form, setForm, supabase}){
           .then(newRequest)
           .catch(error => console.log('error', error));
         setForm(!form)
-       
+        setTimeout(siteReload, 200)
+      function siteReload(){
+        window.location.reload()}
       }
-
      
     return(
         <div className="container">

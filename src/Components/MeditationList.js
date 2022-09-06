@@ -21,7 +21,11 @@ function MeditationList(){
         }
     }
     
-    //https://www.youtube.com/embed/tZMdcmr0_sE
+function miniClick(){
+    const element = document.getElementById("meditationIO");
+  element.scrollIntoView();
+}
+
     return <div>
         {/* The keyframed animation for the title of this page */}
         <svg viewBox="0 0 2200 200">
@@ -38,6 +42,8 @@ function MeditationList(){
       <use href="#t-text" class="text-copy1"></use>
   </g>
 </svg>
+<button value="A Meditaiton Mini-Game" className="reqButton" onClick={miniClick}>A Meditation Mini-Game</button>
+<br></br><br></br>
 {/* The video content of the page */}
         <div className="twoThings">
         <iframe width="560" height="315" className="ytwindow" src={musicForOne} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -59,7 +65,9 @@ function MeditationList(){
        <button onClick={handleClickTwo}>With Music</button>
         </p>
         </div>
+        <div id="meditationIO">
         <iframe title="meditationapp" src="https://www.thisisathing.io/" width="500px" height="700px" allow="fullscreen"></iframe>
+        </div>
     </div>
 }
 

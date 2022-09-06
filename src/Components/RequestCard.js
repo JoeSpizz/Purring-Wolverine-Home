@@ -30,7 +30,7 @@ return(
     <h3>{request.name} requested a {request.genre} video</h3><br></br>
     <p>{request.idea}</p>
     <br></br>
-    <button type="submit" onClick={handleSubmit} id="reqButton">Likes: {likes}</button>
+    <button type="submit" onClick={handleSubmit} className="reqButton">Likes: {likes}</button>
     <div class="layers">
       <div class="layer"></div>
       <div class="layer"></div>

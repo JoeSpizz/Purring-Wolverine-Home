@@ -229,13 +229,15 @@ text-align: center;
 
 
 
-#reqButton{
-  border-radius: 25px;
-  width: 85px;
+.reqButton{
+  border-radius: 15px;
+  width: auto;
   height: 25px;
   background: linear-gradient(.25turn, #3dcce5,#ce39e9);
+  color: white;
+  font-weight: bold;
 }
-#reqButton:hover{
+.reqButton:hover{
   transform: scale(1.3);
 }
 
