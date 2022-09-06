@@ -1,24 +1,22 @@
 import {useState} from 'react'
 
 function RequestForm({newRequest, form, setForm, supabase}){
-  console.log(supabase)
     const [formData, setFormData] = useState({
         name: "Sleepy wolverine cub",
         idea: "",
         genre: "Any",
         likes: 1
       });
-    
+    // Sets formData to the information submitted
       function handleChange(event) {
         setFormData({
           ...formData,
           [event.target.name]: event.target.value,
         });
       }
-    
+    // Runs the POST request to add new data to the supabase server
       function handleSubmit(event) {
         event.preventDefault();
-
         let myHeaders = {
         "apikey" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53Z25rdmFla2l0bnhyYmpiY2NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjIzODY2MDMsImV4cCI6MTk3Nzk2MjYwM30.f5fnLu4pfrXFcsP4VGAdDgwGmsXM0QwKiFTKSLanst0",
         "Content-Type": "application/json"}
@@ -36,6 +34,7 @@ function RequestForm({newRequest, form, setForm, supabase}){
           .then(newRequest)
           .catch(error => console.log('error', error));
         setForm(!form)
+        // Supabase isn't sending live responses back for some reason, this reload ensures the request appears properly. Set to minimum time to ensure POST works.
         setTimeout(siteReload, 200)
       function siteReload(){
         window.location.reload()}

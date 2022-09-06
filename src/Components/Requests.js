@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import RequestForm from "./RequestForm";
 import RequestCard from "./RequestCard";
 import { createClient } from '@supabase/supabase-js'
-
+// code to ensure supabase is hooked up and easy to use. To be honest I mostly ignored this because i was new to it.
 const supabaseUrl = 'https://nwgnkvaekitnxrbjbcch.supabase.co'
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53Z25rdmFla2l0bnhyYmpiY2NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjIzODY2MDMsImV4cCI6MTk3Nzk2MjYwM30.f5fnLu4pfrXFcsP4VGAdDgwGmsXM0QwKiFTKSLanst0"
 const supabase = createClient(supabaseUrl, supabaseKey)
@@ -12,7 +12,7 @@ function Requests (){
     const [form, setForm]=useState(false)
     const [requestArray, setRequestArray] = useState([])
     const displayedRequests = [...requestArray]
-    
+    // pulls all requests initially
     useEffect(()=>{
         var requestOptions = {
             method: 'GET',
@@ -26,17 +26,18 @@ function Requests (){
 
             
     }, [])
-
+// displays/hides the request form
     function handleClick(){
         setForm(!form)
     }
-    
+    // adds new request to the fulls request array for display
     function handleRequest(request){
     setRequestArray([...requestArray, request])
      }
 
 
    return <div>
+           {/* Creation of title for page */}
    <svg viewBox="0 0 2200 200">
 <symbol id="c-text">
  <text text-anchor="middle" x="50%" y="80%">Requests</text>

@@ -3,29 +3,25 @@ import React, {useState} from "react"
 function MeditationList(){
     const [musicForOne, setMusicForOne] = useState("https://www.youtube.com/embed/1Po1oxhgfxs");
     const [musicForTwo, setMusicForTwo] = useState("https://www.youtube.com/embed/tSK2az9FLiw");
+    // functions to swap between video with and without music
     function handleClickOne(){
         if (musicForOne === "https://www.youtube.com/embed/1Po1oxhgfxs"){
-            setMusicForOne("https://www.youtube.com/embed/sv1AxtBmIL8")
-        }
+            setMusicForOne("https://www.youtube.com/embed/sv1AxtBmIL8")}
         else{
             setMusicForOne("https://www.youtube.com/embed/1Po1oxhgfxs")
-        }
-    }
+        }  }
 
     function handleClickTwo(){
         if (musicForTwo === "https://www.youtube.com/embed/tSK2az9FLiw"){
-            setMusicForTwo("https://www.youtube.com/embed/tZMdcmr0_sE")
-        }
+            setMusicForTwo("https://www.youtube.com/embed/tZMdcmr0_sE")  }
         else{
             setMusicForTwo("https://www.youtube.com/embed/tSK2az9FLiw")
-        }
-    }
-    
+        }}
+    // scrolls the meditaiton game into view
 function miniClick(){
     const element = document.getElementById("meditationIO");
   element.scrollIntoView();
 }
-
     return <div>
         {/* The keyframed animation for the title of this page */}
         <svg viewBox="0 0 2200 200">
@@ -65,6 +61,7 @@ function miniClick(){
        <button onClick={handleClickTwo}>With Music</button>
         </p>
         </div>
+        {/* Meditation .io app */}
         <div id="meditationIO">
         <iframe title="meditationapp" src="https://www.thisisathing.io/" width="500px" height="700px" allow="fullscreen"></iframe>
         </div>

@@ -1,5 +1,6 @@
 function Header(){
   return  <div>
+    {/* Creation of title for page */}
   <svg viewBox="0 0 2200 200">
   <symbol id="s-text">
       <text text-anchor="middle" x="50%" y="80%">A PURRING WOLVERINE</text>
@@ -15,6 +16,7 @@ function Header(){
       <use href="#s-text" class="text-copy"></use>
   </g>
 </svg>
+{/* Logo image */}
 <img id="pwImage" src="Wolverinebetteroutlines.png" alt="Purring Wolverine Logo"/>
 </div>
 }

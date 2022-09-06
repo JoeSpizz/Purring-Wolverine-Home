@@ -1,11 +1,10 @@
 function Home (){
     return <div>
+          {/* Creation of title for page */}
     <svg viewBox="0 0 2200 200">
 <symbol id="d-text">
   <text text-anchor="middle" x="50%" y="80%">Welcome to Relaxation</text>
-
 </symbol>
-
 <g className = "g-ants">
   <use href="#d-text" className="text-copy1"></use>
   <use href="#d-text" className="text-copy1"></use>
@@ -14,9 +13,12 @@ function Home (){
   <use href="#d-text" className="text-copy1"></use>
 </g>
 </svg>
+{/* Start of component data */}
 <div className="welcome" >
+  {/* Intro video */}
 <iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/uQP_0fa06rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+{/* About Me/What Is/Credits cards */}
 <div className="homeCards">
 <div className="containerH">
 <div className="cardH">
