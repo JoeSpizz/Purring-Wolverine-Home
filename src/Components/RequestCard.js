@@ -29,23 +29,6 @@ fetch(`https://nwgnkvaekitnxrbjbcch.supabase.co/rest/v1/Requests?id=eq.${id}`, r
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
-  //   fetch(`http://localhost:3000/requests/${id}`, {
-  //     method: "PUT",
-  //     headers: {
-  //       'Accept': 'application/json',
-  //       "Content-Type": "application/json",
-  //       "Access-Control-Allow-Origin":'http://localhost:3001',
-  //     },
-  //     body: JSON.stringify({
-  //       id: request.id,
-  //       name: request.name,
-  //       idea: request.idea,
-  //       genre: request.genre,
-  //       likes: likes +1
-  //     }),
-  //   })
-  //     .then((r) => r.json())
-  // .then((json) => console.log("hello" +json.likes));
     setLikes(likes+1)
 }
 

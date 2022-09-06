@@ -6,7 +6,7 @@ function RequestForm({newRequest, form, setForm, supabase}){
         name: "Sleepy wolverine cub",
         idea: "",
         genre: "Any",
-        likes: 0
+        likes: 1
       });
     
       function handleChange(event) {
