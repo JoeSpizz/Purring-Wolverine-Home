@@ -59,6 +59,7 @@ function MeditationList(){
        <button onClick={handleClickTwo}>With Music</button>
         </p>
         </div>
+        <iframe title="meditationapp" src="https://www.thisisathing.io/" width="500px" height="700px" allow="fullscreen"></iframe>
     </div>
 }
 
