@@ -41,19 +41,19 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 # A PURRING WOLVERINE HOME PAGE
  ## Made with React, hosted with Netlify and Supabase
 
- This 'app' is simply a homepage for my ASMR YouTube channel. [link](https://www.youtube.com/channel/UCa-v-Az44bcKKbx2o1ioOgQ) \
+ This 'app' is simply a homepage for my ASMR YouTube channel. [A Purring Wolverine](https://www.youtube.com/channel/UCa-v-Az44bcKKbx2o1ioOgQ) 
 
- CSS/HTML for the "active titles" comes from Umar Farooq [link](https://codepen.io/umarcbs/pen/oNYePEj) that I heavily edited to fit the site. \
- Note: Any code (CSS or otherwise) not specifically mentioned as written by someone else was written by me\
+ CSS/HTML for the "active titles" comes from Umar Farooq, [AUYK Font](https://codepen.io/umarcbs/pen/oNYePEj), that I heavily edited to fit the site. \
+ Note: Any code (CSS or otherwise) not specifically mentioned as written by someone else was written by me
 
- On the home landing page you will seen an introductory video to both ASMR and my channel. As well as a few stylized cards with basic introductory information: About me, What is ASMR, and a Credits card. These cards were created using CSS/HTML code from Amit Sheen [link](https://codepen.io/amit_sheen/pen/ZEJdamr?editors=1111) that I tweaked to serve my purposes. 
+ On the home landing page you will seen an introductory video to both ASMR and my channel. As well as a few stylized cards with basic introductory information: About me, What is ASMR, and a Credits card. These cards were created using CSS/HTML code from Amit Sheen, [Rainbow Cards](https://codepen.io/amit_sheen/pen/ZEJdamr?editors=1111), that I tweaked to serve my purposes. 
  
  Most of the links, connected with client-side routing via react-router-dom, are simply 
- 'playlists' of videos I've created that match the categories. \
+ 'playlists' of videos I've created that match the categories. 
 
- The meditaiton page contains a number of differences from the above stated pattern. It uses State to allow you to flip a few of the meditation videos to versions that have sound or not. It also contains a small meditation app that I located via reddit. [link](https://www.thisisathing.io/) by Shri Khalpada. Permission to embed the app was given 9.5.22 via Reddit direct message. \
+ The meditaiton page contains a number of differences from the above stated pattern. It uses State to allow you to flip a few of the meditation videos to versions that have sound or not. It also contains a small meditation app that I located via reddit. [Meditate in 100 seconds](https://www.thisisathing.io/) by Shri Khalpada. Permission to embed the app was given 9.5.22 via Reddit direct message. 
 
-The request page is unique as well and takes the most explanation. The request data is hosted in a REST API on [link](https://supabase.com/). When the page loads requests are pulled and displayed. The cards themselves are styled using CSS from Sebi [link](https://codepen.io/DivineBlow/pen/ZEBqNZb) that was edited to fit the site's purposes. 
-A new request will add that data to the supabase server and then render it on the page. Because supabase itself is having trouble with my project enabling 'real-time' the site was rendering a blank request card. By building in a setTimeout reload we worked around this issue. It wasn't elegant but for now it's good enough.\
+The request page is unique as well and takes the most explanation. The request data is hosted in a REST API on [Supabase](https://supabase.com/). When the page loads requests are pulled and displayed. The cards themselves are styled using CSS from Sebi, [Rotating Cards](https://codepen.io/DivineBlow/pen/ZEBqNZb), that was edited to fit the site's purposes. \
+A new request will add that data to the supabase server and then render it on the page. Because supabase itself is having trouble with my project enabling 'real-time' the site was rendering a blank request card. By building in a setTimeout reload we worked around this issue. It wasn't elegant but for now it's good enough.
 
-The code for the fetch requests was heavily aided by [link](https://www.postman.com/) to ensure the proper syntax was being used. 
+The code for the fetch requests was heavily aided by [Postman](https://www.postman.com/) to ensure the proper syntax was being used. 
