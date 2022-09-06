@@ -41,7 +41,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 # A PURRING WOLVERINE HOME PAGE
  ## Made with React, hosted with Netlify and Supabase
 
- This 'app' is simply a homepage for my ASMR YouTube channel. [A Purring Wolverine](https://www.youtube.com/channel/UCa-v-Az44bcKKbx2o1ioOgQ) 
+ This 'app' is simply a homepage for my ASMR YouTube channel. [A Purring Wolverine](https://www.youtube.com/channel/UCa-v-Az44bcKKbx2o1ioOgQ). The logo for A Purring Wolverine was created by [Liam_Fukuda](https://www.instagram.com/liam_fukuda/?hl=en).
 
  CSS/HTML for the "active titles" comes from Umar Farooq, [AUYK Font](https://codepen.io/umarcbs/pen/oNYePEj), that I heavily edited to fit the site. \
  Note: Any code (CSS or otherwise) not specifically mentioned as written by someone else was written by me

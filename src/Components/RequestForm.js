@@ -35,7 +35,7 @@ function RequestForm({newRequest, form, setForm, supabase}){
           .catch(error => console.log('error', error));
         setForm(!form)
         // Supabase isn't sending live responses back for some reason, this reload ensures the request appears properly. Set to minimum time to ensure POST works.
-        setTimeout(siteReload, 200)
+        setTimeout(siteReload, 400)
       function siteReload(){
         window.location.reload()}
       }
