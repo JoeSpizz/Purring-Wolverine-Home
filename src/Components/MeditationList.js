@@ -63,6 +63,7 @@ function miniClick(){
         </div>
         {/* Meditation .io app */}
         <div id="meditationIO">
+            <h3>A 100 second meditation by <a href="https://www.buymeacoffee.com/shrikhalpada">Shri Khalpada</a></h3>
         <iframe title="meditationapp" src="https://www.thisisathing.io/" width="500px" height="700px" allow="fullscreen"></iframe>
         </div>
     </div>

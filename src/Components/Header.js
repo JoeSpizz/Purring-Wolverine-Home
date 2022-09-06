@@ -1,4 +1,5 @@
 function Header(){
+
   return  <div>
     {/* Creation of title for page */}
   <svg viewBox="0 0 2200 200">
@@ -17,7 +18,7 @@ function Header(){
   </g>
 </svg>
 {/* Logo image */}
-<img id="pwImage" src="Wolverinebetteroutlines.png" alt="Purring Wolverine Logo"/>
+<a href= "https://www.youtube.com/channel/UCa-v-Az44bcKKbx2o1ioOgQ" target="_blank" rel="noreferrer"><img id="pwImage" src="Wolverinebetteroutlines.png" alt="Purring Wolverine Logo"/></a>
 </div>
 }
 export default Header
