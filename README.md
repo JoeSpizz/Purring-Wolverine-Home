@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# First let's get the "React App Documentation" out of the way
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,11 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -26,8 +22,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -37,34 +31,29 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Don't use this feature unless you know it's correct.
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Now on to the actual ReadMe
+# A PURRING WOLVERINE HOME PAGE
+ ## Made with React, hosted with Netlify and Supabase
 
-### Code Splitting
+ This 'app' is simply a homepage for my ASMR YouTube channel. [link](https://www.youtube.com/channel/UCa-v-Az44bcKKbx2o1ioOgQ) \
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ CSS/HTML for the "active titles" comes from Umar Farooq [link](https://codepen.io/umarcbs/pen/oNYePEj) that I heavily edited to fit the site. \
+ Note: Any code (CSS or otherwise) not specifically mentioned as written by someone else was written by me\
 
-### Analyzing the Bundle Size
+ On the home landing page you will seen an introductory video to both ASMR and my channel. As well as a few stylized cards with basic introductory information: About me, What is ASMR, and a Credits card. These cards were created using CSS/HTML code from Amit Sheen [link](https://codepen.io/amit_sheen/pen/ZEJdamr?editors=1111) that I tweaked to serve my purposes. 
+ 
+ Most of the links, connected with client-side routing via react-router-dom, are simply 
+ 'playlists' of videos I've created that match the categories. \
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ The meditaiton page contains a number of differences from the above stated pattern. It uses State to allow you to flip a few of the meditation videos to versions that have sound or not. It also contains a small meditation app that I located via reddit. [link](https://www.thisisathing.io/) by Shri Khalpada. Permission to embed the app was given 9.5.22 via Reddit direct message. \
 
-### Making a Progressive Web App
+The request page is unique as well and takes the most explanation. The request data is hosted in a REST API on [link](https://supabase.com/). When the page loads requests are pulled and displayed. The cards themselves are styled using CSS from Sebi [link](https://codepen.io/DivineBlow/pen/ZEBqNZb) that was edited to fit the site's purposes. 
+A new request will add that data to the supabase server and then render it on the page. Because supabase itself is having trouble with my project enabling 'real-time' the site was rendering a blank request card. By building in a setTimeout reload we worked around this issue. It wasn't elegant but for now it's good enough.\
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The code for the fetch requests was heavily aided by [link](https://www.postman.com/) to ensure the proper syntax was being used. 
