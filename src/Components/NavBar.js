@@ -5,7 +5,7 @@ function NavBar(){
       <NavLink className="NavBarLink" to ="/" exact
       activeStyle={{
           color:"rgb(178, 104, 214)",
-        background: "content-box radial-gradient(#9ee2ee, #f4d898)",
+
         textDecoration: "wavy"
       }}>
           Home
@@ -13,7 +13,6 @@ function NavBar(){
       <NavLink className="NavBarLink" to ="/meditation" exact
       activeStyle={{
         color:"rgb(178, 104, 214)",
-      background: "content-box radial-gradient(#9ee2ee, #f4d898)",
       textDecoration: "wavy"
     }}>
         Meditation
@@ -21,7 +20,6 @@ function NavBar(){
       <NavLink className="NavBarLink" to ="/rambles" exact
       activeStyle={{
         color:"rgb(178, 104, 214)",
-      background: "content-box radial-gradient(#9ee2ee, #f4d898)",
       textDecoration: "wavy"
     }}>
         Rambles
@@ -29,7 +27,6 @@ function NavBar(){
         <NavLink className="NavBarLink" to ="/selfcare" exact
       activeStyle={{
         color:"rgb(178, 104, 214)",
-      background: "content-box radial-gradient(#9ee2ee, #f4d898)",
       textDecoration: "wavy"
     }}>
         SelfCare
@@ -38,14 +35,13 @@ function NavBar(){
         <NavLink className="NavBarLink" to ="/roleplays" exact
       activeStyle={{
         color:"rgb(178, 104, 214)",
-      background: "content-box radial-gradient(#9ee2ee, #f4d898)",
       textDecoration: "wavy"
     }}>
         Roleplays
         </NavLink>
       <NavLink className="NavBarLink" to ="/requests" exact activeStyle={{
           color:"rgb(178, 104, 214)",
-        background: "content-box radial-gradient(#9ee2ee, #f4d898)",
+
         textDecoration: "wavy"
       }}>
           Requests

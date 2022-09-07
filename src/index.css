@@ -42,7 +42,7 @@ svg {
     stroke-dasharray: 6% 29%;
     stroke-width: 5px;
     stroke-dashoffset: 0%;
-    animation: stroke-offset 12.5s infinite linear;
+    animation: stroke-offset 7.5s infinite linear;
 }
 
 .text-copy:nth-child(1){
@@ -51,12 +51,12 @@ svg {
 }
 
 .text-copy:nth-child(2){
-	stroke: #f7f41c;
+	stroke: #2c1f01;
 	animation-delay: -2s;
 }
 
 .text-copy:nth-child(3){
-	stroke: #4de738;
+	stroke: #1e910e;
 	animation-delay: -3s;
 }
 
@@ -66,7 +66,7 @@ svg {
 }
 
 .text-copy:nth-child(5){
-	stroke: #ce39e9;
+	stroke: #9325a6;
 	animation-delay: -5s;
 }
 
@@ -87,10 +87,9 @@ svg {
   display: inline-block;
   width: auto;
   padding: 12px;
-  background: #d793e8;
-  background: content-box radial-gradient(rgb(178, 34, 214), #f4d898);
+  font-family: fantasy;
   font-size: 3em;
-  color: #9ee2ee;
+  color: #3d5ce5;
 }
 .twoThings{
   display: flex;
@@ -109,11 +108,11 @@ svg {
   stroke-dasharray: 6% 29%;
   stroke-width: 5px;
   stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
+  animation: stroke-offset 9.5s infinite linear;
 }
 
 .text-copy1:nth-child(1){
-stroke: #3dcce5;
+stroke: #3d5ce5;
 animation-delay: -1;
 }
 
@@ -123,7 +122,7 @@ animation-delay: -2s;
 }
 
 .text-copy1:nth-child(3){
-stroke: #3dcce5;
+stroke: #3d5ce5;
 animation-delay: -5s;
 }
 
@@ -133,7 +132,7 @@ animation-delay: -6s;
 }
 
 .text-copy1:nth-child(5){
-stroke: #3dcce5;
+stroke: #3d5ce5;
 animation-delay: -8s;
 }
 
@@ -192,7 +191,7 @@ text-align: center;
 .card-container {
   perspective: 50em;
 }
-.card-container:nth-child(1) { --bi: linear-gradient(#555 5em, #0000 3em), linear-gradient(60deg, #ce39e9, #3dcce5); }
+.card-container:nth-child(1) { --bi: linear-gradient(#555 5em, #0000 3em), linear-gradient(60deg, #ce39e9, #3d5ce5); }
 
 
 .card {
@@ -233,7 +232,7 @@ text-align: center;
   border-radius: 15px;
   width: auto;
   height: 25px;
-  background: linear-gradient(.25turn, #3dcce5,#ce39e9);
+  background: linear-gradient(.25turn, #3d5ce5,#ce39e9);
   color: white;
   font-weight: bold;
 }
