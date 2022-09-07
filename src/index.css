@@ -46,27 +46,27 @@ svg {
 }
 
 .text-copy:nth-child(1){
-	stroke: #eb211d;
+	stroke: #3d5ce5;
 	animation-delay: -1;
 }
 
 .text-copy:nth-child(2){
-	stroke: #2c1f01;
+	stroke: #9325a6;
 	animation-delay: -2s;
 }
 
 .text-copy:nth-child(3){
-	stroke: #1e910e;
+	stroke: #3d5ce5;
 	animation-delay: -3s;
 }
 
 .text-copy:nth-child(4){
-	stroke: #639ee7;
+	stroke: #9325a6;
 	animation-delay: -4s;
 }
 
 .text-copy:nth-child(5){
-	stroke: #9325a6;
+	stroke: #3d5ce5;
 	animation-delay: -5s;
 }
 
@@ -290,19 +290,19 @@ text-align: center;
           }
 
           .java {
-            background-color: #43e34b;
+            background-color: #5789d9;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           .python {
-            background-color: #00fffc;
+            background-color: #5789d9;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           .cSharp {
-            background-color: #d42cd6;
+            background-color: #5789d9;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -331,9 +331,9 @@ text-align: center;
     .cardH:nth-child(1) .face2 {
       background-image: linear-gradient(
         40deg,
-        #fffc00 0%,
-        #fc00ff 45%,
-        #00fffc 100%
+        #f4d898 0%,
+        #9325a6 45%,
+        #3d5ce5 100%
       );
       border-radius: 15px;
     }
@@ -341,9 +341,9 @@ text-align: center;
     .cardH:nth-child(2) .face2 {
       background-image: linear-gradient(
         40deg,
-        #fc00ff 0%,
-        #00fffc 45%,
-        #fffc00 100%
+        #9325a6 0%,
+        #3d5ce5 45%,
+        #f4d898 100%
       );
       border-radius: 15px;
     }
@@ -351,9 +351,9 @@ text-align: center;
     .cardH:nth-child(3) .face2 {
       background-image: linear-gradient(
         40deg,
-        #00fffc 0%,
-        #fc00ff 45%,
-        #fffc00 100%
+        #3d5ce5 0%,
+        #9325a6 45%,
+        #f4d898 100%
       );
       border-radius: 15px;
     }
