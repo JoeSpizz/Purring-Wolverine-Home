@@ -12,7 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.headerC{
+  display: flex;
+  float: left;
+}
+#pwImage {width: 7em;
+  height:7em;
+  display: block;
+  margin-left: 150px;
+  margin-right: -75px;
+}
 /* This styling came largely from CodePen vault https://codepen.io/umarcbs/pen/oNYePEj */
 /* and was then edited by me to fit the site */
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
@@ -74,14 +83,10 @@ svg {
 	100% {stroke-dashoffset: -35%;}
 }
 /* The following editing is for the rest of the site */
-#pwImage {width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .NavBar{
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 .NavBarLink {
   display: inline-block;
@@ -90,6 +95,11 @@ svg {
   font-family: fantasy;
   font-size: 3em;
   color: #3d5ce5;
+  transform: skew(-15deg);
+}
+.NavBarLink:hover{
+  color: #9325a6;
+  background: linear-gradient(45deg,white, #f4d898);
 }
 .twoThings{
   display: flex;
@@ -369,5 +379,6 @@ text-align: center;
     }
     .content a:hover{
       font-kerning: 5px;
-      
-    }
+      }
+
+      /* navigation bar styling */

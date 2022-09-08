@@ -5,7 +5,7 @@ import Home from "./Components/Home";
 import MeditationList from "./Components/MeditationList";
 import Roleplays from "./Components/Roleplays";
 import Rambles from "./Components/Rambles";
-import '../src/index.css';
+import '../src/index.scss';
 import Requests from "./Components/Requests";
 import SelfCare from "./Components/SelfCare";
 
@@ -34,7 +34,6 @@ function App() {
           <SelfCare/>
         </Route>
         </Switch>
-        
       
        
     </div>
