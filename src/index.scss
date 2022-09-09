@@ -84,9 +84,8 @@ svg {
 }
 /* The following editing is for the rest of the site */
 .NavBar{
-  display: flex;
-  float: left;
-  justify-content: space-between;
+  display: inline-flex;
+  width: 100%;
   background-color: white;
 }
 .NavBarLink {
