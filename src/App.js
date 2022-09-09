@@ -34,6 +34,7 @@ function App() {
           <SelfCare/>
         </Route>
         </Switch>
+        <br></br>
       <NavBar/>
        
     </div>
