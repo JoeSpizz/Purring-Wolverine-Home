@@ -32,7 +32,7 @@ html, body{
 }
 
 body{
-  background: #f4d898;
+  background: #f2dca9;
   font-family: Arial;
 }
 
@@ -99,7 +99,7 @@ svg {
 }
 .NavBarLink:hover{
   color: #9325a6;
-  background: linear-gradient(45deg,white, #f4d898);
+  background: linear-gradient(45deg,white, #f2dca9);
 }
 
 .twoThings{
@@ -119,7 +119,7 @@ svg {
   stroke-dasharray: 6% 29%;
   stroke-width: 5px;
   stroke-dashoffset: 0%;
-  animation: stroke-offset 9.5s infinite linear;
+  animation: stroke-offset 11.5s infinite linear;
 }
 
 .text-copy1:nth-child(1){
@@ -264,7 +264,7 @@ text-align: center;
   align-items: center;
   font-family: "Montserrat";
   min-height: 100vh;
-  background-color: #f4d898;
+  background-color: #f2dca9;
 }
   .containerH {
     max-width: 100vw;
@@ -296,6 +296,8 @@ text-align: center;
         .face1 {
           box-sizing: border-box;
           padding: 20px;
+          margin-bottom: 20px;
+          
         }
           h2 {
             margin: 0;
@@ -306,22 +308,22 @@ text-align: center;
             background-color: #5789d9;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            padding-bottom: 45px;
-            margin-bottom: -20px;
+            padding-bottom: 5px;
+          
           }
 
           .python {
             background-color: #5789d9;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            padding-bottom: 25px;
+            padding-bottom: 5px;
           }
 
           .cSharp {
             background-color: #5789d9;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            padding-bottom: 30px;
+            padding-bottom: 10px;
           }
         
 
@@ -348,7 +350,7 @@ text-align: center;
     .cardH:nth-child(1) .face2 {
       background-image: linear-gradient(
         40deg,
-        #f4d898 0%,
+        #f2dca9 0%,
         #9325a6 45%,
         #3d5ce5 100%
       );
@@ -360,7 +362,7 @@ text-align: center;
         40deg,
         #9325a6 0%,
         #3d5ce5 45%,
-        #f4d898 100%
+        #f2dca9 100%
       );
       border-radius: 15px;
     }
@@ -370,7 +372,7 @@ text-align: center;
         40deg,
         #3d5ce5 0%,
         #9325a6 45%,
-        #f4d898 100%
+        #f2dca9 100%
       );
       border-radius: 15px;
     }

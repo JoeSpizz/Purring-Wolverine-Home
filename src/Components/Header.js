@@ -2,7 +2,7 @@ function Header(){
 
   return  <div><div className="headerC">
     {/* Creation of title for page */}
-    <img id="pwImage" src="Wolverinebetteroutlines.png" alt="Purring Wolverine Logo"/>
+    <a href= "https://www.youtube.com/channel/UCa-v-Az44bcKKbx2o1ioOgQ" target="_blank" rel="noreferrer"><img id="pwImage" src="Wolverinebetteroutlines.png" alt="Purring Wolverine Logo"/></a>
     </div>
   <svg viewBox="0 0 2200 200">
   <symbol id="s-text">
