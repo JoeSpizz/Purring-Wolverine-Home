@@ -1,4 +1,7 @@
-function Roleplays(){
+import VideoCard from "./VideoCard";
+
+function Roleplays({videos}){
+    let vids = videos.filter(vid => vid.genre==="Roleplay");
     return <div>
         {/* Code for the Title of the Component */}
         <svg viewBox="0 0 2200 200">
@@ -16,7 +19,8 @@ function Roleplays(){
   </g>
 </svg>
 {/* Code for the videos themselves */}
-<div className="twoThings">
+{ vids.map(vid=><VideoCard vid={vid}/>)}
+{/* <div className="twoThings">
 <iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/FDZzvmUBq1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/BJ6-eOOvqTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -25,7 +29,7 @@ function Roleplays(){
 ASMR Soft Spoken and whispering. Some light triggers with pencil on paper.</p>
     <p className="videoDescription">Wherein you desperately need someone to help with your makeup before you go out and all you have is me. I've never done this before, but I'm sure I'll make you look great. As long as you don't look too hard.</p>
 
-</div>
+</div> */}
     </div>
 }
 export default Roleplays
