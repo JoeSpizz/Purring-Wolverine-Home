@@ -1,4 +1,9 @@
-function Home (){
+
+
+function Home ({videos}){
+  let first = videos.filter(vid => vid.genre==="Intro")
+ let intro = first[0] && first[0].url
+
     return <div>
           {/* Creation of title for page */}
     <svg viewBox="0 0 2200 200">
@@ -16,7 +21,7 @@ function Home (){
 {/* Start of component data */}
 <div className="welcome" >
   {/* Intro video */}
-<iframe width="560" height="315" className="ytwindow" src="https://www.youtube.com/embed/uQP_0fa06rI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" className="ytwindow" src={`${intro}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 {/* About Me/What Is/Credits cards */}
 <div className="homeCards">

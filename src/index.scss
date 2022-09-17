@@ -107,6 +107,13 @@ svg {
   justify-content: space-around;
   margin-bottom: 20px;
 }
+.videoCard{
+  display: inline-grid;
+  margin: 15px;
+  color: #9325a6;
+  font-size: larger;
+}
+
 .componentTitle{
   display: flex;
   justify-content: space-around;
@@ -151,6 +158,7 @@ animation-delay: -8s;
 .videoDescription{
   width: 560px;
   text-align: center;
+  margin-top: 15px;
 }
 .welcome{
   text-align: center;

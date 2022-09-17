@@ -1,6 +1,10 @@
 import React, {useState} from "react"
 
-function MeditationList(){
+function MeditationList({videos}){
+    let vids = videos.filter(vid => vid.genre==="Meditation")
+ console.log(vids)
+
+    
     const [musicForOne, setMusicForOne] = useState("https://www.youtube.com/embed/1Po1oxhgfxs");
     const [musicForTwo, setMusicForTwo] = useState("https://www.youtube.com/embed/tSK2az9FLiw");
     // functions to swap between video with and without music
