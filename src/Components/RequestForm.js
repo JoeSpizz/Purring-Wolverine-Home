@@ -31,13 +31,9 @@ function RequestForm({newRequest, form, setForm, supabase}){
         
         fetch("https://nwgnkvaekitnxrbjbcch.supabase.co/rest/v1/Requests", requestOptions)
           .then(response => response.text())
-          .then(newRequest)
+          .then(newRequest(formData))
           .catch(error => console.log('error', error));
         setForm(!form)
-        // Supabase isn't sending live responses back for some reason, this reload ensures the request appears properly. Set to minimum time to ensure POST works.
-        setTimeout(siteReload, 400)
-      function siteReload(){
-        window.location.reload()}
       }
      
     return(

@@ -3,22 +3,22 @@ import VideoCard from "./VideoCard";
 
 function MeditationList({videos}){
     let vids = videos.filter(vid => vid.genre==="Meditation")
-    const [musicForOne, setMusicForOne] = useState("https://www.youtube.com/embed/1Po1oxhgfxs");
-    const [musicForTwo, setMusicForTwo] = useState("https://www.youtube.com/embed/tSK2az9FLiw");
-    // functions to swap between video with and without music
-    function handleClickOne(){
-        if (musicForOne === "https://www.youtube.com/embed/1Po1oxhgfxs"){
-            setMusicForOne("https://www.youtube.com/embed/sv1AxtBmIL8")}
-        else{
-            setMusicForOne("https://www.youtube.com/embed/1Po1oxhgfxs")
-        }  }
+    // const [musicForOne, setMusicForOne] = useState("https://www.youtube.com/embed/1Po1oxhgfxs");
+    // const [musicForTwo, setMusicForTwo] = useState("https://www.youtube.com/embed/tSK2az9FLiw");
+    // functions to swap between video with and without music, was used before refactoring code to pull from API
+    // function handleClickOne(){
+    //     if (musicForOne === "https://www.youtube.com/embed/1Po1oxhgfxs"){
+    //         setMusicForOne("https://www.youtube.com/embed/sv1AxtBmIL8")}
+    //     else{
+    //         setMusicForOne("https://www.youtube.com/embed/1Po1oxhgfxs")
+    //     }  }
 
-    function handleClickTwo(){
-        if (musicForTwo === "https://www.youtube.com/embed/tSK2az9FLiw"){
-            setMusicForTwo("https://www.youtube.com/embed/tZMdcmr0_sE")  }
-        else{
-            setMusicForTwo("https://www.youtube.com/embed/tSK2az9FLiw")
-        }}
+    // function handleClickTwo(){
+    //     if (musicForTwo === "https://www.youtube.com/embed/tSK2az9FLiw"){
+    //         setMusicForTwo("https://www.youtube.com/embed/tZMdcmr0_sE")  }
+    //     else{
+    //         setMusicForTwo("https://www.youtube.com/embed/tSK2az9FLiw")
+    //     }}
     // scrolls the meditaiton game into view
 function miniClick(){
     const element = document.getElementById("meditationIO");
