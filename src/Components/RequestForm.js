@@ -1,6 +1,7 @@
 import {useState} from 'react'
+import API_KEY from '../Key';
 
-function RequestForm({newRequest, form, setForm, supabase}){
+function RequestForm({newRequest, form, setForm}){
     const [formData, setFormData] = useState({
         name: "Sleepy wolverine cub",
         idea: "",
@@ -18,7 +19,7 @@ function RequestForm({newRequest, form, setForm, supabase}){
       function handleSubmit(event) {
         event.preventDefault();
         let myHeaders = {
-        "apikey" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53Z25rdmFla2l0bnhyYmpiY2NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjIzODY2MDMsImV4cCI6MTk3Nzk2MjYwM30.f5fnLu4pfrXFcsP4VGAdDgwGmsXM0QwKiFTKSLanst0",
+        "apikey" : API_KEY,
         "Content-Type": "application/json"}
         
         let raw = JSON.stringify([formData]);

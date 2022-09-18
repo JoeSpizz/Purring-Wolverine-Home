@@ -9,16 +9,20 @@ import Rambles from "./Components/Rambles";
 import '../src/index.scss';
 import Requests from "./Components/Requests";
 import SelfCare from "./Components/SelfCare";
+import API_KEY from "./Key";
 
 function App() {
   const [videos, setVideos] = useState([])
   useEffect(()=>{
     var requestOptions = {
         method: 'GET',
+        headers:{
+          "apikey" : API_KEY
+        },
         redirect: 'follow'
       };
       
-      fetch("https://nwgnkvaekitnxrbjbcch.supabase.co/rest/v1/videos?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53Z25rdmFla2l0bnhyYmpiY2NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjIzODY2MDMsImV4cCI6MTk3Nzk2MjYwM30.f5fnLu4pfrXFcsP4VGAdDgwGmsXM0QwKiFTKSLanst0", requestOptions)
+      fetch("https://nwgnkvaekitnxrbjbcch.supabase.co/rest/v1/videos?", requestOptions)
         .then(r => r.json())
         .then(data => setVideos(data))
         .catch(error => console.log('error', error));
