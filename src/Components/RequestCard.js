@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
+import API_KEY from '../Key'
 function RequestCard ({request}){
 const [likes, setLikes] = useState(request.likes)
 // This is the function to update likes. PUT request used because PATCH triggers cors block
 function handleSubmit(){
     let id = request.id
     let myHeaders = {
-"apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53Z25rdmFla2l0bnhyYmpiY2NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjIzODY2MDMsImV4cCI6MTk3Nzk2MjYwM30.f5fnLu4pfrXFcsP4VGAdDgwGmsXM0QwKiFTKSLanst0",
+"apikey": API_KEY,
 "Content-Type": "application/json",
-"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53Z25rdmFla2l0bnhyYmpiY2NoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjIzODY2MDMsImV4cCI6MTk3Nzk2MjYwM30.f5fnLu4pfrXFcsP4VGAdDgwGmsXM0QwKiFTKSLanst0",
+"Authorization": `Bearer ${API_KEY}`,
     }
 let raw = JSON.stringify([
   {  "id": id,
